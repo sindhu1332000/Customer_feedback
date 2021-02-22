@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>CUSTOMER FEEDBACK</title>
+  </head>
+  <body class="bg-sucess">
+      <div class="col-md-6 offset-md-3 my-s">
+          <div class="card">
+              <div class="crad-body">
+    <br><h2 style="text-align:center">CUSTOMER FEEDBACK</h2><br>
+    <hr> 
+    </div>
+    <div class="card-body">
+    <canvas id="myChart"></canvas>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['Pant', 'Shirt', 'Top', 'Shoe', 'Slipper', 'Scarf'],
+        datasets: [{
+            label: 'Positive reviews',
+            backgroundColor: 'rgb(0, 99, 132)',
+            data: [4, 6, 4, 3, 7, 3]
+        },{
+            label: 'Average Reviews',
+            backgroundColor: 'rgb(150, 160  , 132)',
+            data: [5, 3, 9, 7, 2, 4]
+        },{
+            label: 'Negative Reviews',
+            backgroundColor: 'rgb(250, 150  , 132)',
+            data: [3, 5, 7, 9, 7, 3]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
